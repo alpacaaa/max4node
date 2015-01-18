@@ -39,7 +39,7 @@ class Max4Node
 
 
   create_input_socket: (port) ->
-    socket = udp.createSocket 'udp4', @handle_messages
+    socket = udp.createSocket 'udp4'
     socket.bind port
 
     socket.on 'message', (msg, rinfo) =>

@@ -31,7 +31,7 @@
 
     Max4Node.prototype.create_input_socket = function(port) {
       var socket;
-      socket = udp.createSocket('udp4', this.handle_messages);
+      socket = udp.createSocket('udp4');
       socket.bind(port);
       socket.on('message', (function(_this) {
         return function(msg, rinfo) {
