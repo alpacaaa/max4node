@@ -38,7 +38,11 @@
           var obj;
           obj = _this.parse_message(msg);
           if (obj.is_get_reply || obj.is_observer_reply) {
-            _this.emitters[obj.callback].emit('value', obj.value);
+            try {
+              _this.emitters[obj.callback].emit('value', obj.value);
+            } catch (_error) {
+              err = _error;
+            }
           }
           if (obj.is_get_reply) {
             return delete _this.emitters[obj.callback];

@@ -46,7 +46,9 @@ class Max4Node
       obj = @parse_message msg
 
       if obj.is_get_reply or obj.is_observer_reply
-        @emitters[obj.callback].emit 'value', obj.value
+        try
+          @emitters[obj.callback].emit 'value', obj.value
+        catch err
 
       if obj.is_get_reply
         delete @emitters[obj.callback]
