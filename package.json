@@ -2,7 +2,7 @@
   "name": "max4node",
   "description": "Communicate with Ableton Live through Max for Live.",
   "author": "Marco Sampellegrini <babbonatale@alpacaaa.net>",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "max4node.js",
   "scripts": {
     "prepublish": "./node_modules/.bin/coffee -o . -c max4node.coffee",
