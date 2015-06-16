@@ -130,7 +130,7 @@ Testing is done with fake sockets, so you don't need to open Ableton and Max.
 
 ### Big ups
 
-I would have never been able to come up with the Max device without looking at the code of [Fingz](http://www.atmosphery.org/#!/labs/fingz), an awesome project that you should definitely check out.  
+I would have never been able to come up with the Max device without looking at the code of [Fingz](http://www.atmosphery.com/#fingz), an awesome project that you should definitely check out.  
 I learned a lot about Max from it, debugging in Max is as painful as listening to Justin Bieber, but it's the only
 way we have to access the Ableton API in a reliable manner (control surfaces programming is a joke, and
 not officially supported).
