@@ -43,7 +43,7 @@ max.get({
   path: 'live_set master_track mixer_device volume',
   property: 'value'
 })
-.once('value', function(val) {
+.on('value', function(val) {
   console.log('Master track volume: ' + val);
 });
 ```
@@ -94,7 +94,7 @@ max.count({
   path: 'live_set tracks 0',
   property: 'clip_slots'
 })
-.once('value', function(count) {
+.on('value', function(count) {
   console.log(count + ' clips');
 });
 ```
